@@ -9,13 +9,13 @@ namespace Game
     public class Player
     {
         public int Health { get; set; }
-        
+
         public string Name { get; set; }
 
         public bool IsDead { get; set; }
 
         public bool IsGuarding { get; set; }
-        
+
         public Player()
         {
             Health = 100;
@@ -29,14 +29,15 @@ namespace Game
                 Console.WriteLine(Name + " blocked the attack!");
 
                 IsGuarding = false;
-            }else
+            }
+            else
             {
                 Health = Health - hit_value;
-
-                Console.WriteLine(Name + " was hit for " + hit_value + " damage! You now have " + Health + " health remaning.\n");
                 Thread.Sleep(1000);
+                Console.WriteLine(Name + " was hit for " + hit_value + " damage! You now have " + Health + " health remaning.\n");
+
             }
-            
+
             if (Health <= 0)
             {
                 Die();
@@ -49,7 +50,7 @@ namespace Game
 
             if (Health > 100)
             {
-                Health = 100;                
+                Health = 100;
             }
             Thread.Sleep(1000);
             Console.WriteLine(Name + " has healed " + amount_to_heal + " health. You now have " + Health + " remaning.");
@@ -63,5 +64,5 @@ namespace Game
             IsDead = true;
         }
     }
-    
+
 }

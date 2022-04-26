@@ -125,14 +125,15 @@ namespace Game
             Console.WriteLine("                             ▓▓    ▓▓▓▓            ");
             Console.WriteLine("                           ████      ██            ");
             Console.WriteLine("                       ▓▓████      ████            ");
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
             //While the first enemy and the player is not dead, repeat the action
             while (!enemy.IsDead && !player.IsDead)
             {
 
-
+                Thread.Sleep(1000);
                 Console.WriteLine("\nWhat would you like to do?\n");
+                Thread.Sleep(1000);
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("\n1. Single Attack\n2. Three Strike Attack\n3. Defend\n4. Heal\n");
                 Console.ForegroundColor = ConsoleColor.White;
@@ -141,7 +142,7 @@ namespace Game
                 //Check for type of action
                 if (playerAction == "1")
                 {
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
                     Console.WriteLine($"\nYou chose to attack the {enemy.Name} once!\n");
 
                     enemy.GetsHit(random.Next(1, max_player_attack));
@@ -166,6 +167,7 @@ namespace Game
                 else if (playerAction == "3")
                 {
                     Console.WriteLine("\nYou chose to defend!\n");
+                    Thread.Sleep(1000);
 
                     player.IsGuarding = true;
 
