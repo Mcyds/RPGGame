@@ -100,32 +100,59 @@ namespace Game
             Console.WriteLine("--ATACAN BILGEN--");
         }
 
+
         private static void GameLoop(Enemy enemy, Random random, Player player, int max_attack_power, int max_player_attack)
         {
-            //Player chooses action
-            Thread.Sleep(2000);
-            Console.WriteLine($"{player.Name} you have encountered a {enemy.Name}!\n");
-            Console.WriteLine("                   ▓▓▓▓▓▓▓▓▓▓▓▓                    ");
-            Console.WriteLine("       ▓▓▓▓      ▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓                  ");
-            Console.WriteLine("       ▓▓      ▓▓▓▓    ▓▓██    ██                  ");
-            Console.WriteLine("       ▓▓▓▓    ▓▓▓▓    ████              ▓▓▓▓      ");
-            Console.WriteLine("         ▓▓    ▓▓▓▓                        ▓▓▓▓    ");
-            Console.WriteLine("         ▓▓▓▓  ▓▓████        ▓▓        ▓▓    ██    ");
-            Console.WriteLine("           ▓▓▓▓  ██▓▓▓▓▓▓▓▓▓▓          ▓▓▓▓▓▓██    ");
-            Console.WriteLine("     ▓▓      ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓    ▓▓▓▓██    ");
-            Console.WriteLine("     ▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓        ▓▓██    ");
-            Console.WriteLine("       ▓▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      ▓▓██    ");
-            Console.WriteLine("               ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    ████  ▓▓");
-            Console.WriteLine("         ▓▓██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████    ██");
-            Console.WriteLine("       ▓▓▓▓      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████    ████");
-            Console.WriteLine("       ▓▓  ▓▓▓▓██████▓▓▓▓▓▓▓▓▓▓████████  ▓▓▓▓▓▓██  ");
-            Console.WriteLine("         ▓▓▓▓        ████▓▓▓▓██████████▓▓          ");
-            Console.WriteLine("         ▓▓▓▓            ▓▓████████    ▓▓▓▓    ██  ");
-            Console.WriteLine("           ▓▓▓▓              ▓▓  ▓▓▓▓    ▓▓▓▓▓▓██  ");
-            Console.WriteLine("                             ▓▓    ▓▓▓▓            ");
-            Console.WriteLine("                           ████      ██            ");
-            Console.WriteLine("                       ▓▓████      ████            ");
-            Thread.Sleep(1000);
+            if (enemy.Name == "Giant Crab")
+            {
+                Thread.Sleep(1000);
+                Console.WriteLine($"{player.Name} you have encountered a {enemy.Name}!\n");
+                Console.WriteLine("                   ▓▓▓▓▓▓▓▓▓▓▓▓                    ");
+                Console.WriteLine("       ▓▓▓▓      ▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓                  ");
+                Console.WriteLine("       ▓▓      ▓▓▓▓    ▓▓██    ██                  ");
+                Console.WriteLine("       ▓▓▓▓    ▓▓▓▓    ████              ▓▓▓▓      ");
+                Console.WriteLine("         ▓▓    ▓▓▓▓                        ▓▓▓▓    ");
+                Console.WriteLine("         ▓▓▓▓  ▓▓████        ▓▓        ▓▓    ██    ");
+                Console.WriteLine("           ▓▓▓▓  ██▓▓▓▓▓▓▓▓▓▓          ▓▓▓▓▓▓██    ");
+                Console.WriteLine("     ▓▓      ████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓    ▓▓▓▓██    ");
+                Console.WriteLine("     ▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓        ▓▓██    ");
+                Console.WriteLine("       ▓▓▓▓████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓      ▓▓██    ");
+                Console.WriteLine("               ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    ████  ▓▓");
+                Console.WriteLine("         ▓▓██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████    ██");
+                Console.WriteLine("       ▓▓▓▓      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████████    ████");
+                Console.WriteLine("       ▓▓  ▓▓▓▓██████▓▓▓▓▓▓▓▓▓▓████████  ▓▓▓▓▓▓██  ");
+                Console.WriteLine("         ▓▓▓▓        ████▓▓▓▓██████████▓▓          ");
+                Console.WriteLine("         ▓▓▓▓            ▓▓████████    ▓▓▓▓    ██  ");
+                Console.WriteLine("           ▓▓▓▓              ▓▓  ▓▓▓▓    ▓▓▓▓▓▓██  ");
+                Console.WriteLine("                             ▓▓    ▓▓▓▓            ");
+                Console.WriteLine("                           ████      ██            ");
+                Console.WriteLine("                       ▓▓████      ████            ");
+                Thread.Sleep(1000);
+            }
+            else
+            {
+                Thread.Sleep(1000);
+                Console.WriteLine("\n     ███████████████████████████");
+                Console.WriteLine("     ███████▀▀▀░░░░░░░▀▀▀███████");
+                Console.WriteLine("     ████▀░░░░░░░░░░░░░░░░░▀████");
+                Console.WriteLine("     ███│░░░░░░░░░░░░░░░░░░░│███");
+                Console.WriteLine("     ██▌│░░░░░░░░░░░░░░░░░░░│▐██");
+                Console.WriteLine("     ██░└┐░░░░░░░░░░░░░░░░░┌┘░██");
+                Console.WriteLine("     ██░░└┐░░░░░░░░░░░░░░░┌┘░░██");
+                Console.WriteLine("     ██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██");
+                Console.WriteLine("     ██▌░│██████▌░░░▐██████│░▐██");
+                Console.WriteLine("     ███░│▐███▀▀░░▄░░▀▀███▌│░███");
+                Console.WriteLine("     ██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██");
+                Console.WriteLine("     ██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██");
+                Console.WriteLine("     ████▄─┘██▌░░░░░░░▐██└─▄████");
+                Console.WriteLine("     █████░░▐█─┬┬┬┬┬┬┬─█▌░░█████");
+                Console.WriteLine("     ████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████");
+                Console.WriteLine("     █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████");
+                Console.WriteLine("     ███████▄░░░░░░░░░░░▄███████");
+                Console.WriteLine("     ██████████▄▄▄▄▄▄▄██████████");
+                Console.WriteLine("     ███████████████████████████\n");
+            }
+            
 
             //While the first enemy and the player is not dead, repeat the action
             while (!enemy.IsDead && !player.IsDead)
