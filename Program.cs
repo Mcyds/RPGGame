@@ -10,6 +10,7 @@ namespace Game
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             //Storing username
             Console.WriteLine("---------------------------------------------------------");
             Console.ForegroundColor = ConsoleColor.Blue;
