@@ -73,7 +73,7 @@ namespace Game
         private static void GameOver()
         {
             Thread.Sleep(1000);
-            Console.WriteLine("\n   ███████████████████████████");
+            Console.WriteLine("\n     ███████████████████████████");
             Console.WriteLine("     ███████▀▀▀░░░░░░░▀▀▀███████");
             Console.WriteLine("     ████▀░░░░░░░░░░░░░░░░░▀████");
             Console.WriteLine("     ███│░░░░░░░░░░░░░░░░░░░│███");
