@@ -23,8 +23,9 @@ namespace Game
         {
             Health = Health - hit_value;
             Thread.Sleep(1000);
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(Name + " was hit for " + hit_value + " damage! He now has " + Health + " health remaning.\n");
-            
+            Console.ForegroundColor = ConsoleColor.White;
             if (Health <= 0)
             {
                 Die();

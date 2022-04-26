@@ -26,7 +26,9 @@ namespace Game
 
             Thread.Sleep(1000);
 
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Welcome {player.Name}!\n");
+            Console.ForegroundColor = ConsoleColor.White;
 
             //Enemy1 condition
 
@@ -106,7 +108,9 @@ namespace Game
             if (enemy.Name == "Giant Crab")
             {
                 Thread.Sleep(1000);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine($"{player.Name} you have encountered a {enemy.Name}!\n");
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("                   ▓▓▓▓▓▓▓▓▓▓▓▓                    ");
                 Console.WriteLine("       ▓▓▓▓      ▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓                  ");
                 Console.WriteLine("       ▓▓      ▓▓▓▓    ▓▓██    ██                  ");

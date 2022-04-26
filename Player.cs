@@ -34,7 +34,9 @@ namespace Game
             {
                 Health = Health - hit_value;
                 Thread.Sleep(1000);
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(Name + " was hit for " + hit_value + " damage! You now have " + Health + " health remaning.\n");
+                Console.ForegroundColor = ConsoleColor.White;
 
             }
 
@@ -53,7 +55,9 @@ namespace Game
                 Health = 100;
             }
             Thread.Sleep(1000);
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(Name + " has healed " + amount_to_heal + " health. You now have " + Health + " remaning.");
+            Console.ForegroundColor = ConsoleColor.White;
             Thread.Sleep(1000);
         }
 
