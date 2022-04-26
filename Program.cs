@@ -131,26 +131,24 @@ namespace Game
             }
             else
             {
+                Console.WriteLine($"{player.Name} you have encountered a {enemy.Name}!\n");
                 Thread.Sleep(1000);
-                Console.WriteLine("\n     ███████████████████████████");
-                Console.WriteLine("     ███████▀▀▀░░░░░░░▀▀▀███████");
-                Console.WriteLine("     ████▀░░░░░░░░░░░░░░░░░▀████");
-                Console.WriteLine("     ███│░░░░░░░░░░░░░░░░░░░│███");
-                Console.WriteLine("     ██▌│░░░░░░░░░░░░░░░░░░░│▐██");
-                Console.WriteLine("     ██░└┐░░░░░░░░░░░░░░░░░┌┘░██");
-                Console.WriteLine("     ██░░└┐░░░░░░░░░░░░░░░┌┘░░██");
-                Console.WriteLine("     ██░░┌┘▄▄▄▄▄░░░░░▄▄▄▄▄└┐░░██");
-                Console.WriteLine("     ██▌░│██████▌░░░▐██████│░▐██");
-                Console.WriteLine("     ███░│▐███▀▀░░▄░░▀▀███▌│░███");
-                Console.WriteLine("     ██▀─┘░░░░░░░▐█▌░░░░░░░└─▀██");
-                Console.WriteLine("     ██▄░░░▄▄▄▓░░▀█▀░░▓▄▄▄░░░▄██");
-                Console.WriteLine("     ████▄─┘██▌░░░░░░░▐██└─▄████");
-                Console.WriteLine("     █████░░▐█─┬┬┬┬┬┬┬─█▌░░█████");
-                Console.WriteLine("     ████▌░░░▀┬┼┼┼┼┼┼┼┬▀░░░▐████");
-                Console.WriteLine("     █████▄░░░└┴┴┴┴┴┴┴┘░░░▄█████");
-                Console.WriteLine("     ███████▄░░░░░░░░░░░▄███████");
-                Console.WriteLine("     ██████████▄▄▄▄▄▄▄██████████");
-                Console.WriteLine("     ███████████████████████████\n");
+                Console.WriteLine("\n                   ▓▓▓▓▓▓▓▓▓▓              ");
+                Console.WriteLine("           ██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████      ");
+                Console.WriteLine("         ██████████▓▓▓▓▓▓▓▓▓▓██████████    ");
+                Console.WriteLine("         ██  ▓▓▓▓████▓▓▓▓▓▓████▓▓▓▓  ██    ");
+                Console.WriteLine("           ▓▓▓▓▓▓  ██▓▓▓▓▓▓██  ▓▓▓▓▓▓      ");
+                Console.WriteLine("           ▓▓▓▓      ██▓▓██      ▓▓▓▓      ");
+                Console.WriteLine("         ▓▓▓▓▓▓    ██  ▓▓  ██    ▓▓▓▓▓▓    ");
+                Console.WriteLine("         ▓▓▓▓▓▓    ██  ▓▓  ██    ▓▓▓▓▓▓    ");
+                Console.WriteLine("       ▓▓▓▓▓▓▓▓        ▓▓        ▓▓▓▓▓▓▓▓  ");
+                Console.WriteLine("     ▓▓▓▓▓▓▓▓▓▓▓▓    ▓▓▓▓▓▓    ▓▓▓▓▓▓▓▓▓▓▓▓");
+                Console.WriteLine("     ▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ▓▓▓▓▓▓▓▓");
+                Console.WriteLine("     ▓▓▓▓▓▓    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▓▓▓▓▓▓");
+                Console.WriteLine("     ▓▓▓▓▓▓    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒    ▓▓▓▓▓▓");
+                Console.WriteLine("     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓");
+                Console.WriteLine("       ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓  ");
+                Console.WriteLine("         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓    \n");
             }
             
 
